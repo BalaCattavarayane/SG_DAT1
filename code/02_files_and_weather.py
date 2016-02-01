@@ -8,10 +8,16 @@ Note: 'rU' mode (read universal) converts different line endings into '\n'
 '''
 
 # read the whole file at once, return a single string
-f = open('../data/drinks.csv', 'rU')
+f = open('./data/drinks.csv', 'rU')
 f.read()        # one big string including newlines
 f.read()        # empty string
 f.close()
+
+print "hi"
+
+exit(0)
+
+
 
 # read one line at a time (entire file does not have to fit into memory)
 f = open('../data/drinks.csv', 'rU')
